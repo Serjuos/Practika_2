@@ -11,7 +11,7 @@
             <DataGrid.Columns>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False" Visibility="Hidden"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="ClientID" Binding="{Binding Client.FirstName}" Header="ClientID" IsReadOnly="False"/>
-                <materialDesign:DataGridTextColumn Width="*" x:Name="ServiceID" Binding="{Binding ServiceSenter.Title}" Header="ServiceID" IsReadOnly="False"/>
+                <materialDesign:DataGridTextColumn Width="*" x:Name="ServiceID" Binding="{Binding ServiceCenter.Title}" Header="ServiceID" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="StartTime" Binding="{Binding StartTime}" Header="StartTime" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="Comment" Binding="{Binding Comment}" Header="Comment" IsReadOnly="False"/>
                 <DataGridTemplateColumn>
