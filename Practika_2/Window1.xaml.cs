@@ -49,8 +49,8 @@ namespace Practika_2
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            Button reda = sender as Button;
-            var redact = reda.DataContext as ServiceCenter;
+            Button redact1 = sender as Button;
+            var redact = redact1.DataContext as ServiceCenter;
             OpenFileDialog das = new OpenFileDialog();
             das.Title = "Выберите изображение";
             das.Filter = "All supported graphics|*.jpeg;*.jpg;*.png|" + " JPEG(*.jpeg;*.jpg)|*.jpeg;*.jpg|" +
