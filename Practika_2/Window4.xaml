@@ -9,9 +9,9 @@
     <Grid Margin="0,0,2,0">
         <DataGrid x:Name="Servicep" IsReadOnly="False" AutoGenerateColumns="False" RenderTransformOrigin="0.506,0.491" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="780" Height="449" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" SelectionChanged="Servicep_SelectionChanged" BorderBrush="#FFDAAB5A">
             <DataGrid.Columns>
-                <materialDesign:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False"/>
-                <materialDesign:DataGridTextColumn Width="*" x:Name="ClientID" Binding="{Binding ClientID}" Header="ClientID" IsReadOnly="False"/>
-                <materialDesign:DataGridTextColumn Width="*" x:Name="ServiceID" Binding="{Binding ServiceID}" Header="ServiceID" IsReadOnly="False"/>
+                <materialDesign:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False" Visibility="Hidden"/>
+                <materialDesign:DataGridTextColumn Width="*" x:Name="ClientID" Binding="{Binding Client.FirstName}" Header="ClientID" IsReadOnly="False"/>
+                <materialDesign:DataGridTextColumn Width="*" x:Name="ServiceID" Binding="{Binding ServiceSenter.Title}" Header="ServiceID" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="StartTime" Binding="{Binding StartTime}" Header="StartTime" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="Comment" Binding="{Binding Comment}" Header="Comment" IsReadOnly="False"/>
                 <DataGridTemplateColumn>
