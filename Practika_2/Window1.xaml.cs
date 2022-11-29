@@ -42,25 +42,25 @@ namespace Practika_2
             {
                 Dobalenie.Photo = new Photo { PhotoPath = das.FileName };
             }
-            var NewDob1 = new Window3(Practika2Entities3, Dobalenie);
-            NewDob1.ShowDialog();
+            var Dobalenie2 = new Window3(Practika2Entities3, Dobalenie);
+            Dobalenie2.ShowDialog();
         }
 
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             Button reda = sender as Button;
-            var reda1 = reda.DataContext as ServiceCenter;
+            var redact = reda.DataContext as ServiceCenter;
             OpenFileDialog das = new OpenFileDialog();
             das.Title = "Выберите изображение";
             das.Filter = "All supported graphics|*.jpeg;*.jpg;*.png|" + " JPEG(*.jpeg;*.jpg)|*.jpeg;*.jpg|" +
             "Portable Network Graphic (*.png)|*.png";
             if (das.ShowDialog() == true)
             {
-                reda1.Photo = new Photo { PhotoPath = das.FileName };
+                redact.Photo = new Photo { PhotoPath = das.FileName };
             }
-            var reda2 = new Window5(Practika2Entities3, reda1);
-            reda2.ShowDialog();
+            var redact2 = new Window5(Practika2Entities3, redact);
+            redact2.ShowDialog();
 
         }
         private void btnDelete_Click(object sender, RoutedEventArgs e)

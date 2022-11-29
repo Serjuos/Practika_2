@@ -26,8 +26,6 @@ namespace Practika_2
             this.DataContext = serviceses;
             InitializeComponent();
         }
-        Practika2Entities3 Practika2Entities3 { get; set; }
-
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

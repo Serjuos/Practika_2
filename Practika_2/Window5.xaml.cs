@@ -22,14 +22,12 @@ namespace Practika_2
         private Practika2Entities3 database;
         private ServiceCenter redact;
         Practika2Entities3 PE;
-        public Window5(Practika2Entities3 sDBEntities, ServiceCenter reda1)
+        public Window5(Practika2Entities3 s, ServiceCenter redact)
         {
-            this.PE = sDBEntities;
-            this.DataContext = reda1;
+            this.PE = s;
+            this.DataContext = redact;
             InitializeComponent();
         }
-
-
         private void btnAdd(object sender, RoutedEventArgs e)
         {
             PE.SaveChanges();
